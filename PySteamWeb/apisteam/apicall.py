@@ -70,6 +70,7 @@ class ApiCall:
         if None != kargs.get('api_v'):
             self.api_v = kargs.get('api_v')
         key = kargs.get('key')
+        steam_id = kargs.get('steam_id')
         game_id = kargs.get('game_id')
         app_id = kargs.get('app_id')
         user_id = kargs.get('user_id')
@@ -78,6 +79,8 @@ class ApiCall:
         params = ''
         if key:
             params += 'key=' + self.import_credentials().get('key') + '&'
+        if steam_id:
+            params += 'steamid=' + self.import_credentials().get('steamID') + '&'
         if game_id != None:
             params += 'gameid=' + game_id + '&'
         if app_id != None:

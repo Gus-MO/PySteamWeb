@@ -1,5 +1,7 @@
-from PySteamWeb import apisteam
+import PySteamWeb.apisteam
+import PySteamWeb.achievs
 
 __all__ = [
-    "apisteam"        
+    "apisteam",
+    "achievs"
 ]
