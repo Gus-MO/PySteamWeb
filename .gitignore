@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 # Local
-**/key.txt
-**/credentials.txt
-**/my_user_id.txt
+**/key*
+**/credentials*
+**/my_user_id*
