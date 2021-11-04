@@ -1,0 +1,1 @@
+http://api.steampowered.com/<interface name>/<method name>/v<version>/?key=<api key>&format=<format>
