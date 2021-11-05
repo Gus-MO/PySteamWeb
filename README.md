@@ -17,31 +17,59 @@ This module intends mainly to acess a user list of achievements on a game, and a
 ## Interface and Methods Progress:
 
 ![0%](https://progress-bar.dev/0) IBroadcastService
+
 ![0%](https://progress-bar.dev/0) ICheatReportingService
+
 ![0%](https://progress-bar.dev/0) ICloudService
+
 ![0%](https://progress-bar.dev/0) IEconMarketService
+
 ![0%](https://progress-bar.dev/0) IEconService
+
 ![0%](https://progress-bar.dev/0) IGameInventory
+
 ![0%](https://progress-bar.dev/0) IGameNotificationsService
+
 ![0%](https://progress-bar.dev/0) IGameServersService
+
 ![0%](https://progress-bar.dev/0) IInventoryService
+
 ![0%](https://progress-bar.dev/0) ILobbyMatchmakingService
+
 ![0%](https://progress-bar.dev/0) IPlayerService
+
 ![0%](https://progress-bar.dev/0) IPublishedFileService
+
 ![0%](https://progress-bar.dev/0) ISteamApps
+
 ![0%](https://progress-bar.dev/0) ISteamCommunity
+
 ![0%](https://progress-bar.dev/0) ISteamEconomy
+
 ![0%](https://progress-bar.dev/0) ISteamGameServerStats
+
 ![0%](https://progress-bar.dev/0) ISteamLeaderboards
+
 ![0%](https://progress-bar.dev/0) ISteamMicroTxnSandbox
+
 ![0%](https://progress-bar.dev/0) ISteamMicroTxn
+
 ![0%](https://progress-bar.dev/0) ISteamNews
+
 ![0%](https://progress-bar.dev/0) ISteamPublishedItemSearch
+
 ![0%](https://progress-bar.dev/0) ISteamPublishedItemVoting
+
 ![0%](https://progress-bar.dev/0) ISteamRemoteStorage
+
 ![0%](https://progress-bar.dev/0) ISiteLicenseService
+
 ![0%](https://progress-bar.dev/0) ISteamUserAuth
+
 ![25%](https://progress-bar.dev/25) ISteamUserStats
+
 ![0%](https://progress-bar.dev/0) ISteamUser
+
 ![0%](https://progress-bar.dev/0) ISteamWebAPIUtil
+
 ![0%](https://progress-bar.dev/0) IWorkshopService

@@ -7,7 +7,7 @@ A way to store a game achievement from the steam web api
 
 from PySteamWeb.apisteam.apicall import ApiCall
 import json
-import urllib
+from urllib import request
 
 class Achiev:
     """
@@ -83,7 +83,7 @@ class Achievements:
         ----------
         None
         """
-        temp_json = urllib.request.urlopen( self.schema_link() )            # Resquests the schema link
+        temp_json = request.urlopen( self.schema_link() )            # Resquests the schema link
         temp_json = json.loads( temp_json.read().decode() ).get('game')     # Stores the json from the link on a dict
 
         game_name = temp_json.get('gameName')
@@ -123,7 +123,7 @@ class Achievements:
         new_call = ApiCall(api_v = '1')
         new_call = new_call.generate_link(interface = 'ISteamUserStats', method='GetPlayerAchievements', app_id = self.app_id, key = True, steam_id = True)
 
-        temp_json = urllib.request.urlopen( new_call )                          # Resquests the schema link
+        temp_json = request.urlopen( new_call )                          # Resquests the schema link
         temp_json = json.loads( temp_json.read().decode() ).get('playerstats')  # Stores the json from the link on a dict
 
         game_achievements = temp_json.get('achievements')

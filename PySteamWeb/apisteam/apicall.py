@@ -75,7 +75,6 @@ class ApiCall:
         """
         if None != kargs.get('api_v'):
             self.api_v = kargs.get('api_v')
-        else: self.api_v = '2'
         key = kargs.get('key')
         steam_id = kargs.get('steam_id')
         game_id = kargs.get('game_id')
