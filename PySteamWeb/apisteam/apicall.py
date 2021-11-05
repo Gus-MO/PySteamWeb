@@ -2,7 +2,9 @@
 ApiCall
 -------
 
-A way to get and store your calls to the Steam Web API
+A way to get and store your calls to the Steam Web API.
+This is the base module for the rest. It provides a
+generic way for calling Methods.
 """
 
 import json
@@ -36,6 +38,9 @@ class ApiCall:
 
     generate_link : Returns a string with the api call link
 
+    Example
+    -------
+
     """
 
     def __init__(self, api_v = '2', creds = './credentials.json'):    # some functions are only avaliable on v1
@@ -61,14 +66,16 @@ class ApiCall:
 
         **kargs
         ---------
-            api_v : The method version, defauts to 2
-            key : Especifies if the creds are necessarie
+            api_v : The method version, defaults to 2
+            key : Especifies if the key on credentials file is necessarie
+            steam_id : Especifies if the steam_id on credentials file is necessarie
             game_id : The game id param
             user_id : The use id param
             
         """
         if None != kargs.get('api_v'):
             self.api_v = kargs.get('api_v')
+        else: self.api_v = '2'
         key = kargs.get('key')
         steam_id = kargs.get('steam_id')
         game_id = kargs.get('game_id')
@@ -77,9 +84,9 @@ class ApiCall:
 
         # Getting the params list
         params = ''
-        if key:
+        if key:         # The key is store on a file, so we only especify if we need it
             params += 'key=' + self.import_credentials().get('key') + '&'
-        if steam_id:
+        if steam_id:    # The steam_id is store on a file, so we only especify if we need it
             params += 'steamid=' + self.import_credentials().get('steamID') + '&'
         if game_id != None:
             params += 'gameid=' + game_id + '&'
